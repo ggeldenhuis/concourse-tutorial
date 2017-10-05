@@ -3,7 +3,7 @@ resources:
 - name: resource-tutorial
   type: git
   source:
-    uri: https://github.com/starkandwayne/concourse-tutorial.git
+    uri: https://github.com/ggeldenhuis/concourse-tutorial.git
 
 jobs:
 - name: job-hello-world
@@ -11,7 +11,8 @@ jobs:
   plan:
   - get: resource-tutorial
   - task: hello-worldaaa
-    file: resource-tutorial/01_task_hello_world/task_hello_world.yml
+#    file: resource-tutorial/01_task_hello_world/task_hello_world.yml
+    file: resource-tutorial/03_task_scripts/task_show_uname.yml
 
 # The name of the task here is irrelevant or just descriptive. The actuall task
 # execution comes from the yml file.

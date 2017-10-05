@@ -9,6 +9,7 @@ image_resource:
 inputs:
 - name: 03_task_scripts
 
-# This script gets executed. 
+# This script gets executed.
 run:
-  path: ./03_task_scripts/task_show_uname.sh
+#  path: ./03_task_scripts/task_show_uname.sh
+  path: whoami
