@@ -9,6 +9,7 @@ jobs:
       image_resource:
         type: docker-image
         source: {repository: busybox}
+      inputs:
+      - name: 04_basic_pipeline
       run:
-        path: echo
-        args: [hello world]
+        path: ./04_basic_pipeline/helloworld.sh

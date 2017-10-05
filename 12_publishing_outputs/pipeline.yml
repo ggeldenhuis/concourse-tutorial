@@ -8,9 +8,7 @@ resources:
   type: git
   source:
     branch: master
-    uri:
-    private_key:
-
+    uri: https://gist.github.com/ggeldenhuis/89b020c324aa65c859673c8cb02e890c
 jobs:
 - name: job-bump-date
   serial: true

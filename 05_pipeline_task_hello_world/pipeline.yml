@@ -10,5 +10,8 @@ jobs:
   public: true
   plan:
   - get: resource-tutorial
-  - task: hello-world
+  - task: hello-worldaaa
     file: resource-tutorial/01_task_hello_world/task_hello_world.yml
+
+# The name of the task here is irrelevant or just descriptive. The actuall task
+# execution comes from the yml file.
